@@ -13,6 +13,7 @@ import SubscribedUserPosts from './components/screens/SubscribesUserPosts'
 import Reset from './components/screens/Reset'
 import ProductDetail from "./components/screens/ProductDetail";
 import NewPassword from './components/screens/Newpassword'
+import Getmp3 from "./components/screens/Getmp3";
 export const UserContext = createContext()
 
 
@@ -32,6 +33,9 @@ const Routing = ()=>{
     <Switch>
       <Route exact path="/" >
       <Home />
+      </Route>
+      <Route path="/getmp3">
+        <Getmp3/>
       </Route>
       <Route path="/signin">
         <Signin />
